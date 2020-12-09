@@ -1,13 +1,165 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: floralwhite;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Common styling */
+a {
+  text-decoration: none;
+  color: rgb(165, 164, 164);
+}
+h1 {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 0.8rem;
+}
+h4 {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: rgb(77, 94, 255);
+}
+
+.loading {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: #112c55;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+}
+.nav-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: cadetblue;
+}
+
+.cart {
+  display: flex;
+  position: relative;
+  padding: 0.5rem 1.2rem;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  color: cadetblue;
+}
+
+.cart p {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.8rem;
+  background-color: rgb(138, 161, 161);
+  color: white;
+  margin-right: 8px;
+  padding: 3px 7px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.center h2 {
+  font-size: 1.2rem;
+}
+
+.item-container {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2rem; */
+  background-color: floralwhite;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.item-contents {
+  width: 80vw;
+  /* background-color: grey; */
+  border-bottom: 2px solid #333;
+  border-radius: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 5rem;
+}
+
+.btn-remove {
+  margin-top: 0.8rem;
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 1rem;
+}
+
+.amount {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-section {
+  width: 60vw;
+  background-color: floralwhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 4px solid #222;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.clear-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: red;
+  border: 2px solid red;
+  padding: 8px 50px;
+  border-radius: 5px;
 }
